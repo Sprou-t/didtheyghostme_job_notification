@@ -2,7 +2,7 @@
 
 A dependency-free Python watcher that checks the
 [Singapore Summer 2026 Tech Internships list](https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships)
-at 8:17 AM and 8:17 PM Singapore time and sends matching new roles to Telegram.
+at 7:17 AM and 7:17 PM Singapore time and sends matching new roles to Telegram.
 
 ## Setup
 

@@ -2,8 +2,8 @@ name: Watch internships
 
 on:
   schedule:
-    # Avoid GitHub's busy top-of-hour window. 00:17/12:17 UTC = 08:17/20:17 SGT.
-    - cron: "17 0,12 * * *"
+    # Avoid GitHub's busy top-of-hour window. 11:17/23:17 UTC = 19:17/07:17 SGT.
+    - cron: "17 11,23 * * *"
   workflow_dispatch:
 
 permissions:
