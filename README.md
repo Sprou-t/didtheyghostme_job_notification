@@ -18,8 +18,18 @@ at 7:17 AM and 7:17 PM Singapore time and sends matching new roles to Telegram.
    comma-separated list. The default is
    `software,swe,engineer,developer,backend,full stack,fullstack,data,ai,ml`.
    Set the variable to an empty value to match every new role.
-5. Enable GitHub Actions. The first run only records existing rows, so it does
-   not send hundreds of backlog alerts.
+5. Create a free cron-job.org job for 07:17 and 19:17 in `Asia/Singapore`:
+   - URL:
+     `https://api.github.com/repos/Sprou-t/didtheyghostme_job_notification/actions/workflows/watch.yml/dispatches`
+   - Method: `POST`
+   - Body: `{"ref":"main"}`
+   - Headers: `Authorization: Bearer <FINE_GRAINED_TOKEN>`,
+     `Accept: application/vnd.github+json`, `Content-Type: application/json`,
+     and `X-GitHub-Api-Version: 2026-03-10`
+
+The token should be limited to this repository with only **Actions: read and
+write** permission. The first run records existing rows without sending backlog
+alerts.
 
 The workflow commits `state/seen_rows.json` to `main` after each change.
 Repository settings must allow GitHub Actions to create and approve commits
