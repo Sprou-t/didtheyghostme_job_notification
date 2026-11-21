@@ -2,7 +2,7 @@
 
 A dependency-free Python watcher that checks the
 [Singapore Summer 2026 Tech Internships list](https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships)
-at 7:17 AM and 7:17 PM Singapore time and sends matching new roles to Telegram.
+at 8 AM and 8 PM Singapore time and sends matching new roles to Telegram.
 
 ## Setup
 
@@ -18,7 +18,7 @@ at 7:17 AM and 7:17 PM Singapore time and sends matching new roles to Telegram.
    comma-separated list. The default is
    `software,swe,engineer,developer,backend,full stack,fullstack,data,ai,ml`.
    Set the variable to an empty value to match every new role.
-5. Create a free cron-job.org job for 07:17 and 19:17 in `Asia/Singapore`:
+5. Create a free cron-job.org job for 08:00 and 20:00 in `Asia/Singapore`:
    - URL:
      `https://api.github.com/repos/Sprou-t/didtheyghostme_job_notification/actions/workflows/watch.yml/dispatches`
    - Method: `POST`
