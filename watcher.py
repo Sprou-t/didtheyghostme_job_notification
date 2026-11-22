@@ -21,7 +21,7 @@ SOURCE_URL = (
 )
 STATE_PATH = Path(__file__).parent / "state" / "seen_rows.json"
 DEFAULT_KEYWORDS = (
-    "software,swe,engineer,developer,backend,full stack,fullstack,data,ai,ml"
+    "software,swe,engineer,developer,backend,full stack,fullstack,data,ai,ml,agent"
 )
 SEPARATOR_RE = re.compile(r"^:?-{3,}:?$")
 MARKDOWN_LINK_RE = re.compile(r"!?\[([^\]]*)\]\((?:[^()]|\([^()]*\))*\)")

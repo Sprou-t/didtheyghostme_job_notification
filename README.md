@@ -16,7 +16,7 @@ at 9 AM and 8 PM Singapore time and sends matching new roles to Telegram.
    - `TELEGRAM_CHAT_ID`
 4. Optionally add a repository variable named `ROLE_KEYWORDS` containing a
    comma-separated list. The default is
-   `software,swe,engineer,developer,backend,full stack,fullstack,data,ai,ml`.
+   `software,swe,engineer,developer,backend,full stack,fullstack,data,ai,ml,agent`.
    Set the variable to an empty value to match every new role.
 5. Create a free cron-job.org job for 09:00 and 20:00 in `Asia/Singapore`:
    - URL:
